@@ -1,111 +1,103 @@
-# NovaSpace – Responsive Landing Page
-
-## OIBSIP Web Development Internship — Task 1
-
-NovaSpace is a modern, responsive landing page for a fictional productivity platform designed to help students organize tasks, manage projects, track progress, and work toward their goals.
-
-This project was built using **HTML5 and CSS3 only**. No JavaScript or backend is required.
-
-## Project Overview
-
-The landing page introduces the NovaSpace productivity platform through a clean layout, a purple-and-white color palette, feature cards, an about section, sample testimonials, and calls to action.
-
-## Features
-
-- Sticky navigation bar with links to page sections
-- Hero section with headline, description, and call-to-action button
-- Workspace/dashboard illustration created with HTML and CSS
-- Three feature cards:
-  - Smart Planning
-  - Track Progress
-  - Stay Focused
-- About section describing the platform
-- Sample testimonials
-- Call-to-action section
-- Footer with contact and social links
-- Hover effects and smooth scrolling
-- Responsive layouts for desktop, tablet, and mobile screens
-- CSS Grid and Flexbox layouts
-- Google Fonts: DM Sans and Manrope
-
-## Technologies Used
-
-- **HTML5** — page structure and content
-- **CSS3** — styling, layout, hover effects, and responsive design
-- **Visual Studio Code** — code editor
-- **Live Server** — local development preview (optional)
-
-## Project Structure
-
-```text
-WebDev-L1-LandingPage/
+Personal Portfolio Website
+OIBSIP Web Development Internship --- Task 2
+Project Overview
+This project is a personal portfolio website designed to showcase my
+profile, technical skills, projects, education, and contact information.
+It provides a simple and professional way to present my background and
+development skills.
+The website is built using HTML5 and CSS3, with JavaScript used to
+enhance navigation by automatically highlighting the active navigation
+link as the user scrolls through different sections.
+Objectives
+- Create a personal portfolio website.
+- Present personal and professional information in an organized
+  layout.
+- Showcase technical skills and projects.
+- Provide easy navigation between page sections.
+- Build a responsive and user-friendly interface.
+- Practise HTML, CSS, and JavaScript fundamentals.
+Technologies Used
+- HTML5: Structures the portfolio content and sections.
+- CSS3: Styles the website and manages its layout and
+  responsiveness.
+- JavaScript: Detects visible sections and updates the active
+  navigation link using IntersectionObserver.
+Features
+- Profile and introduction section.
+- About Me section.
+- Technical skills section.
+- Projects showcase.
+- Education section.
+- Contact information and social profile links.
+- Navigation links for moving between sections.
+- Active navigation highlighting while scrolling.
+- Accessibility support using the aria-current attribute.
+- Responsive layout for desktop, tablet, and mobile devices.
+How Active Navigation Works
+The JavaScript code uses the browser's IntersectionObserver API to
+detect when a section inside the <main> element becomes visible.
+When a section is detected:
+1. The code identifies the section's ID.
+2. It compares the ID with each navigation link's href.
+3. It adds aria-current="location" to the matching navigation link.
+4. It removes the attribute from the other navigation links.
+5. CSS styles the active link to make the current section easier to
+   identify.
+Project Structure
+WebDev-L1-PersonalPortfolio/
 ├── index.html
 ├── style.css
+├── script.js
 └── README.md
-```
-
-## How to Run the Project
-
-1. Download or clone the project repository.
-2. Open the project folder in Visual Studio Code.
-3. Make sure `index.html` and `style.css` are in the same folder.
-4. Open `index.html` in a browser, or install the **Live Server** extension in VS Code.
-5. If using Live Server, right-click `index.html` and select **Open with Live Server**.
-6. Resize the browser or use Chrome DevTools' device toolbar to test the responsive layout.
-
-## Page Sections
-
-1. **Navigation** — links to Home, Features, About, and Reviews.
-2. **Hero** — introduces NovaSpace and provides a link to explore the features.
-3. **Features** — presents Smart Planning, Track Progress, and Stay Focused.
-4. **About** — explains the platform's purpose.
-5. **Testimonials** — displays sample user reviews.
-6. **Call to Action** — encourages visitors to get started.
-7. **Footer** — includes navigation, contact, and social links.
-
-## Responsive Design
-
-CSS media queries adjust the layout for different screen sizes:
-
-- Tablet and medium screens
-- Mobile screens
-- Very narrow screens
-
-The feature and testimonial cards change from multi-column layouts to a single-column layout on smaller screens.
-
-## Important Notes
-
-- NovaSpace is a fictional product created for this student project.
-- The testimonials are sample content, not verified customer reviews.
-- The page is a static front-end demonstration. It does not include account creation, data storage, or backend functionality.
-- The contact email is a placeholder (`hello@example.com`). Replace it with your own project contact details if needed.
-- The Google Fonts import requires an internet connection; fallback fonts will be used if the fonts cannot load.
-
-## Assignment Checklist
-
-- [x] Sticky navigation with multiple links
-- [x] Hero headline, description, and call-to-action
-- [x] Three feature cards
-- [x] About section
-- [x] Testimonials section
-- [x] Footer with contact and social links
-- [x] Consistent purple-and-white visual theme
-- [x] CSS Grid and Flexbox
-- [x] Responsive styles for smaller screens
-- [x] HTML and CSS kept in separate files
-
-## Future Improvements
-
-- Add a functional mobile navigation menu using JavaScript.
-- Connect the call-to-action to a real sign-up page.
-- Replace sample testimonials with genuine feedback.
-- Add accessibility checks and optimize performance.
-- Publish the site using GitHub Pages or another static hosting platform.
-
-## Author
-
-**Name:** Supriya N  
-**Program:** OIBSIP Web Development Internship  
-**Task:** Level 1 — Task 1: Landing Page
-
-
+Include any additional files, such as images or other assets, that your
+actual project uses. Update filenames above if your project uses
+different names.
+How to Run the Project
+1. Download or clone the repository.
+2. Open the WebDev-L1-PersonalPortfolio folder.
+3. Ensure that index.html links to the correct CSS and JavaScript
+   files.
+4. Open index.html in a web browser.
+5. Scroll through the portfolio sections to test the active navigation
+   highlighting.
+No external JavaScript libraries are required for the active navigation
+feature.
+Testing
+- Verify that all navigation links point to the correct section IDs.
+- Scroll through the page and check whether the active navigation link
+  changes.
+- Confirm that the CSS styles the active navigation link.
+- Test the layout at different screen sizes.
+- Check that the website loads without JavaScript errors.
+Developer Information
+- Name: Supriya N
+- Role: Aspiring Software Developer
+- Degree: Bachelor of Engineering (BE)
+- College: SDMIT, Ujire
+- Email: 23c51@sdmit.in
+- GitHub: supriyan12787
+- LinkedIn:
+  supriya-n-b52771353
+Internship Details
+- Organization: Oasis Infobyte
+- Track: Web Development
+- Task: Task 2 --- Personal Portfolio Website
+Project Links
+- GitHub Repository: Add your portfolio repository or project
+  folder URL after uploading.
+- Live Demo: Add your deployed website URL after hosting the
+  project.
+Learning Outcomes
+Through this project, I practised:
+- Structuring web pages with HTML5.
+- Designing layouts with CSS3.
+- Creating navigation between page sections.
+- Using JavaScript's querySelectorAll() method.
+- Implementing IntersectionObserver for scroll-based interactions.
+- Improving navigation accessibility with aria-current.
+- Organizing project files for GitHub.
+Conclusion
+This personal portfolio project demonstrates my practical learning in
+front-end web development. It combines HTML, CSS, and JavaScript to
+create an organized portfolio with scroll-aware navigation and a
+user-friendly interface.
